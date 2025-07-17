@@ -1,0 +1,13 @@
+@import "tailwindcss";
+
+
+[data-scroll-container] {
+  overflow: hidden;
+}
+
+html, body {
+  height: 100%;
+  margin: 0;
+}
+
+
