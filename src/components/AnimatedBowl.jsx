@@ -7,7 +7,7 @@ import ingredient4 from "../assets/images/ingredient4.png";
 import ingredient5 from "../assets/images/ingredient5.png";
 import ingredient6 from "../assets/images/ingredient6.png";
 import facewash from "../assets/images/fashwash.png";
-import { motion } from "framer-motion";
+import { motion } from "motion/react";
 
 const ingredients = [
   { src: ingredient1, direction: "left" },
