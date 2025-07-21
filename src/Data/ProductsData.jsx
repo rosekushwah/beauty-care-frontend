@@ -4,8 +4,8 @@ export const productsData = [
   // Face Wash (5 variants)
   {
     id: 1,
-    name: "Glow Face Wash",
-    image: "https://images.unsplash.com/photo-1600185366001-029f7b74c04c?auto=format&fit=crop&w=400&q=80",
+    name: "BeetRoot Face Wash",
+    image: "/images/bg-facewash.jpg",
     price: 299,
     category: "Face",
     rating: 4.5,
@@ -14,7 +14,7 @@ export const productsData = [
   {
     id: 2,
     name: "Neem Face Wash",
-    image: "https://images.unsplash.com/photo-1587474260584-136574528ed4?auto=format&fit=crop&w=400&q=80",
+    image: "/images/facewah2.png",
     price: 349,
     category: "Face",
     rating: 4.3,
@@ -23,7 +23,7 @@ export const productsData = [
   {
     id: 3,
     name: "Charcoal Face Wash",
-    image: "https://images.unsplash.com/photo-1614336913485-84db40e91ac5?auto=format&fit=crop&w=400&q=80",
+    image: "/images/fashwash.png",
     price: 379,
     category: "Face",
     rating: 4.6,
@@ -32,7 +32,7 @@ export const productsData = [
   {
     id: 4,
     name: "Vitamin C Face Wash",
-    image: "https://images.unsplash.com/photo-1613040882399-f6b3c0865f9c?auto=format&fit=crop&w=400&q=80",
+    image: "/images/fashwah3.png",
     price: 329,
     category: "Face",
     rating: 4.4,
@@ -41,7 +41,7 @@ export const productsData = [
   {
     id: 5,
     name: "Tea Tree Face Wash",
-    image: "https://images.unsplash.com/photo-1629196907343-2236571260f0?auto=format&fit=crop&w=400&q=80",
+    image: "/images/facewah2.png",
     price: 299,
     category: "Face",
     rating: 4.2,
@@ -52,7 +52,7 @@ export const productsData = [
   {
     id: 6,
     name: "Aloe Vera Moisturizer",
-    image: "https://images.unsplash.com/photo-1600180758890-d2c4b3d86f48?auto=format&fit=crop&w=400&q=80",
+    image: "/images/fashwash.png",
     price: 399,
     category: "Moisturizer",
     rating: 4.7,
@@ -61,7 +61,7 @@ export const productsData = [
   {
     id: 7,
     name: "Shea Butter Moisturizer",
-    image: "https://images.unsplash.com/photo-1617059322004-6f1a3242bb1d?auto=format&fit=crop&w=400&q=80",
+    image: "/images/fashwash.png",
     price: 449,
     category: "Moisturizer",
     rating: 4.8,
@@ -70,7 +70,7 @@ export const productsData = [
   {
     id: 8,
     name: "Light Gel Moisturizer",
-    image: "https://images.unsplash.com/photo-1588776814546-c0d6a3a64805?auto=format&fit=crop&w=400&q=80",
+    image: "/images/fashwash.png",
     price: 399,
     category: "Moisturizer",
     rating: 4.5,
@@ -79,7 +79,7 @@ export const productsData = [
   {
     id: 9,
     name: "Hydrating Rose Moisturizer",
-    image: "https://images.unsplash.com/photo-1621303837174-89787a7d1b5c?auto=format&fit=crop&w=400&q=80",
+    image: "/images/fashwash.png",
     price: 429,
     category: "Moisturizer",
     rating: 4.6,
@@ -88,7 +88,7 @@ export const productsData = [
   {
     id: 10,
     name: "Oil-Free Daily Moisturizer",
-    image: "https://images.unsplash.com/photo-1611920592171-279c8d0bcb0d?auto=format&fit=crop&w=400&q=80",
+    image: "/images/fashwash.png",
     price: 359,
     category: "Moisturizer",
     rating: 4.3,
@@ -99,7 +99,7 @@ export const productsData = [
   {
     id: 11,
     name: "Sunscreen SPF 50",
-    image: "https://images.unsplash.com/photo-1611080626919-7cf5a9dbabda?auto=format&fit=crop&w=400&q=80",
+    image: "/images/facewah2.png",
     price: 499,
     category: "Sunscreen",
     rating: 4.6,
@@ -108,7 +108,7 @@ export const productsData = [
   {
     id: 12,
     name: "Sunscreen SPF 30",
-    image: "https://images.unsplash.com/photo-1598514982900-31233d3dc8c0?auto=format&fit=crop&w=400&q=80",
+    image: "/images/facewah2.png",
     price: 459,
     category: "Sunscreen",
     rating: 4.4,
@@ -117,7 +117,7 @@ export const productsData = [
   {
     id: 13,
     name: "Matte Sunscreen Gel",
-    image: "https://images.unsplash.com/photo-1586244435369-21f7150b55c5?auto=format&fit=crop&w=400&q=80",
+    image: "/images/facewah2.png",
     price: 479,
     category: "Sunscreen",
     rating: 4.5,
@@ -126,7 +126,7 @@ export const productsData = [
   {
     id: 14,
     name: "Water Resistant Sunscreen",
-    image: "https://images.unsplash.com/photo-1600180857761-3f39c05f4e5e?auto=format&fit=crop&w=400&q=80",
+    image: "/images/facewah2.png",
     price: 529,
     category: "Sunscreen",
     rating: 4.7,
@@ -135,7 +135,7 @@ export const productsData = [
   {
     id: 15,
     name: "Tinted Sunscreen Cream",
-    image: "https://images.unsplash.com/photo-1625861335729-098c06e8a611?auto=format&fit=crop&w=400&q=80",
+    image: "/images/facewah2.png",
     price: 489,
     category: "Sunscreen",
     rating: 4.6,
@@ -145,46 +145,46 @@ export const productsData = [
   // Charcoal Masks (5 variants)
   {
     id: 16,
-    name: "Charcoal Face Mask",
-    image: "https://images.unsplash.com/photo-1604147706288-51a3d38f08a6?auto=format&fit=crop&w=400&q=80",
+    name: "Charcoal Shampoo",
+    image: "/images/shampoo1.png",
     price: 259,
-    category: "Face Mask",
+    category: "Shampoo",
     rating: 4.2,
     description: "Removes impurities and clears skin pores.",
   },
   {
     id: 17,
     name: "Peel-Off Charcoal Mask",
-    image: "https://images.unsplash.com/photo-1621519025696-cdcfc1650f80?auto=format&fit=crop&w=400&q=80",
+    image: "/images/shampoo1.png",
     price: 289,
-    category: "Face Mask",
+    category: "Shampoo",
     rating: 4.3,
     description: "Peel-off mask for deep blackhead removal.",
   },
   {
     id: 18,
     name: "Charcoal Clay Mask",
-    image: "https://images.unsplash.com/photo-1600180993817-f89f665c7c30?auto=format&fit=crop&w=400&q=80",
+    image: "/images/shampoo1.png",
     price: 319,
-    category: "Face Mask",
+    category: "Shampoo",
     rating: 4.4,
     description: "Detoxifying clay-based mask with charcoal.",
   },
   {
     id: 19,
     name: "Cooling Charcoal Mask",
-    image: "https://images.unsplash.com/photo-1611078006707-f7f4165b7724?auto=format&fit=crop&w=400&q=80",
+    image: "/images/shampoo1.png",
     price: 279,
-    category: "Face Mask",
+    category: "Shampoo",
     rating: 4.2,
     description: "Soothing charcoal mask with mint extracts.",
   },
   {
     id: 20,
     name: "Charcoal Bubble Mask",
-    image: "https://images.unsplash.com/photo-1588776814546-c0d6a3a64805?auto=format&fit=crop&w=400&q=80",
+    image: "/images/shampoo1.png",
     price: 349,
-    category: "Face Mask",
+    category: "Shampoo",
     rating: 4.5,
     description: "Foaming charcoal mask for deep pore cleanse.",
   },
@@ -193,7 +193,7 @@ export const productsData = [
   {
     id: 21,
     name: "Vitamin C Serum",
-    image: "https://images.unsplash.com/photo-1616690723716-b070d99ef8dc?auto=format&fit=crop&w=400&q=80",
+    image: "/images/fashwah3.png",
     price: 699,
     category: "Serum",
     rating: 4.8,
@@ -202,7 +202,7 @@ export const productsData = [
   {
     id: 22,
     name: "Hyaluronic Acid Serum",
-    image: "https://images.unsplash.com/photo-1588776814493-1e9c2f7619cf?auto=format&fit=crop&w=400&q=80",
+    image: "/images/fashwah3.png",
     price: 749,
     category: "Serum",
     rating: 4.6,
@@ -211,7 +211,7 @@ export const productsData = [
   {
     id: 23,
     name: "Niacinamide Serum",
-    image: "https://images.unsplash.com/photo-1611078489932-ef5c28d84d20?auto=format&fit=crop&w=400&q=80",
+    image: "/images/fashwah3.png",
     price: 649,
     category: "Serum",
     rating: 4.5,
@@ -220,7 +220,7 @@ export const productsData = [
   {
     id: 24,
     name: "Retinol Night Serum",
-    image: "https://images.unsplash.com/photo-1611095973515-7bcaf2a9c79e?auto=format&fit=crop&w=400&q=80",
+    image: "/images/fashwah3.png",
     price: 799,
     category: "Serum",
     rating: 4.7,
@@ -229,7 +229,7 @@ export const productsData = [
   {
     id: 25,
     name: "Glow Booster Serum",
-    image: "https://images.unsplash.com/photo-1588776814565-1d6dbf70b9a4?auto=format&fit=crop&w=400&q=80",
+    image: "/images/fashwah3.png",
     price: 729,
     category: "Serum",
     rating: 4.6,

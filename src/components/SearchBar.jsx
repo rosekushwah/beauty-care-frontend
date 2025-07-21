@@ -19,16 +19,6 @@ const SearchBar = ({ products, showFilter, setShowFilter, text, setText }) => {
     }
   };
 
-  const handleSearch = () => {
-    
-    if (text.trim()) {
-      navigate(`/products?search=${text}`);
-    } else {
-      navigate("/products");
-    }
-    setSuggestions([]);
-  };
-
   const handleSuggestionClick = (name) => {
     setText(name);
     navigate(`/products?search=${name}`);
@@ -43,8 +33,9 @@ const SearchBar = ({ products, showFilter, setShowFilter, text, setText }) => {
           value={text}
           onChange={handleChange}
           onKeyDown={(e) => {
-            if(e.key === "Enter"){
-              handleSearch();
+            if (e.key === "Enter") {
+              navigate(`/products?search=${text}`);
+              setSuggestions([]);
             }
           }}
           placeholder="Search products..."
@@ -65,19 +56,17 @@ const SearchBar = ({ products, showFilter, setShowFilter, text, setText }) => {
         )}
       </div>
 
+      {/* Filter button (for mobile view) */}
       <div className="flex gap-2">
-        <button
-          onClick={handleSearch}
-          className="border py-1 px-2 rounded text-2xl  hover:bg-gray-800"
-        >
-          <i className="ri-search-line"></i>
-        </button>
-
         <button
           onClick={() => setShowFilter(!showFilter)}
           className="border p-1 rounded text-2xl md:hidden"
         >
-          {showFilter ? <i className="ri-filter-off-line mr-1"></i> : <i className="ri-filter-line mr-1"></i>}
+          {showFilter ? (
+            <i className="ri-filter-off-line mr-1"></i>
+          ) : (
+            <i className="ri-filter-line mr-1"></i>
+          )}
         </button>
       </div>
     </div>
