@@ -38,7 +38,7 @@ const productData = [
 
 const Galery = () => {
   return (
-    <section className="w-full px-6 py-20 bg-[#fff9f4] space-y-24 md:px-20 xl:px-40">
+    <section className="w-full px-6 py-20 bg-[#f7f5f2] space-y-24 md:px-20 xl:px-40">
       <div className="text-center mb-10">
         <motion.h2
           initial={{ opacity: 0, y: -20 }}

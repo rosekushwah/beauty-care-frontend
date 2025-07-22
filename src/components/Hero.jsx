@@ -1,5 +1,7 @@
 import { motion } from "framer-motion";
 import hero from '../assets/images/hero.png';
+import { Link } from "react-router-dom";
+
 
 const Hero = () => {
   return (
@@ -33,6 +35,7 @@ const Hero = () => {
               Skincare that’s clean, gentle, and made to <br /> love your skin — naturally.
             </motion.p>
 
+            <Link to="/products">
             <motion.button
               className="mt-6 bg-[#fffaf6] border border-[#c2b3a8] text-[#7e6659] 
               hover:bg-[#e9e2db] hover:text-[#5a4b41] 
@@ -43,6 +46,8 @@ const Hero = () => {
             >
               Find Your Glow
             </motion.button>
+            </Link>
+
           </div>
         </motion.div>
 
