@@ -6,9 +6,10 @@ import ingredient3 from "../assets/images/ingredient3.png";
 import ingredient4 from "../assets/images/ingredient4.png";
 import ingredient5 from "../assets/images/ingredient5.png";
 import ingredient6 from "../assets/images/ingredient6.png";
-import facewash from "../assets/images/fashwash.png";
-import shampoo1 from "../assets/images/shampoo1.png";
-import facewash3 from "../assets/images/fashwah3.png";
+import facewash from "../assets/images/NeemFW200ml.png";
+import Lotion from "../assets/images/SoftskinLotion200ml.png";
+import shampoo from "../assets/images/AyurvedicSHB500ml.png";
+
 import { motion } from "motion/react";
 
 
@@ -64,7 +65,7 @@ const AnimatedBowl = () => {
               y: step >= 1 ? (isMobile ? 50 : 300) : -100,
               x: step >= 1 ? (isMobile ? 100 : 630) : 0,
             }}
-            transition={{ duration: 0.5 }}
+            transition={{ duration: isMobile ? 0.2 : 0.5 }}
           />
         </div>
 
@@ -79,7 +80,8 @@ const AnimatedBowl = () => {
               y: step >= 2 ? (isMobile ? 50 : 250) : -100,
               x: step >= 2 ? (isMobile ? -100 : -600) : 0,
             }}
-            transition={{ duration: 0.8 }}
+            transition={{ duration: isMobile ? 0.2 : 0.8 }}
+            // transition={{ duration: 0.8 }}
           />
 
         </div>
@@ -95,7 +97,8 @@ const AnimatedBowl = () => {
               y: step >= 3 ? (isMobile ? 50 : 250) : -100,
               x: step >= 3 ? (isMobile ? 100 : 600) : 0,
             }}
-            transition={{ duration: 0.8 }}
+            transition={{ duration: isMobile ? 0.2 : 0.8 }}
+            // transition={{ duration: 0.8 }}
           />
 
         </div>
@@ -111,7 +114,8 @@ const AnimatedBowl = () => {
               y: step >= 4 ? (isMobile ? 50 : 250) : -100,
               x: step >= 4 ? (isMobile ? -100 : -600) : 0,
             }}
-            transition={{ duration: 0.8 }}
+            transition={{ duration: isMobile ? 0.2 : 0.8 }}
+            // transition={{ duration: 0.8 }}
           />
 
         </div>
@@ -127,7 +131,8 @@ const AnimatedBowl = () => {
               y: step >= 5 ? (isMobile ? 50 : 250) : -100,
               x: step >= 5 ? (isMobile ? 100 : 600) : 0,
             }}
-            transition={{ duration: 0.8 }}
+            transition={{ duration: isMobile ? 0.2 : 0.8 }}
+            // transition={{ duration: 0.8 }}
           />
 
         </div>
@@ -143,7 +148,8 @@ const AnimatedBowl = () => {
               y: step >= 6 ? (isMobile ? 100 : 250) : -100,
               x: step >= 6 ? (isMobile ? -100 : -600) : 0,
             }}
-            transition={{ duration: 0.8 }}
+            transition={{ duration: isMobile ? 0.2 : 0.8 }}
+            // transition={{ duration: 0.8 }}
           />
 
         </div>
@@ -154,9 +160,10 @@ const AnimatedBowl = () => {
             className="w-50 sm:w-50 md:w-90"
             animate={{
               y: step >= 7 ? (isMobile ? 10 : 50) : 0,
-              rotate: step >= 7 ? 10 : 0, // X-axis 3D rotation
+              rotate: step >= 7 ? 10 : 0, 
             }}
-            transition={{ duration: 1 }}
+            transition={{ duration: isMobile ? 0.5 : 1 }}
+            // transition={{ duration: 1 }}
           />
         </div>
   
@@ -167,7 +174,7 @@ const AnimatedBowl = () => {
           <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8">
             <div className="bg-white shadow-xl rounded-2xl p-6 text-center transition hover:scale-105">
               <img
-                src={shampoo1}
+                src={shampoo}
                 alt="Aloe Facewash"
                 className="w-32 sm:w-40 md:w-40  object-cover mx-auto mb-4 rounded-full"
               />
@@ -182,17 +189,17 @@ const AnimatedBowl = () => {
                 <motion.img
                   src={facewash}
                   alt="Aloe Facewash"
-                  className="w-32 sm:w-40 md:w-40 mx-auto mb-4 rounded-full"
+                  className="w-32 sm:w-40 md:w-40  xl:w-40 object-cover mx-auto mb-4 rounded-full"
                   initial={{
                     opacity: 0,
                     scale: 0.5,
-                    y: step >= 7 ? (isMobile ? -110 : -250) : 0,
+                    y: step >= 7 ? (isMobile ? -400 : -250) : 0,
                   }}
                   animate={{
                     opacity: 1,
-                    scale: 1.3,
+                    scale: 1.1,
                     rotate: 360,
-                    y: step >= 7 ? (isMobile ? 10 : 30) : 0,
+                    y: step >= 7 ? (isMobile ? 10 : 10) : 0,
                   }}
                   transition={{ duration: 1.2 }}
                 />
@@ -205,11 +212,11 @@ const AnimatedBowl = () => {
 
             <div className="bg-white shadow-xl rounded-2xl p-6 text-center transition hover:scale-105">
               <img
-                src={facewash3}
+                src={Lotion}
                 alt="Glow Lotion"
                 className="w-32 sm:w-40 md:w-40  object-cover mx-auto mb-4 rounded-full"
               />
-              <h3 className="text-xl font-semibold mb-2">Glow Lotion</h3>
+              <h3 className="text-xl font-semibold mb-2">Body Lotion</h3>
               <p className="text-gray-600">
                 Intense hydration that brightens and softens your skin all day 💧
               </p>

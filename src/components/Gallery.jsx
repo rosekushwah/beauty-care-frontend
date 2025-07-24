@@ -1,44 +1,49 @@
 import React from "react";
 import { motion } from "framer-motion";
-import product1 from "../assets/images/fashwash.png";
-import product2 from "../assets/images/fashwah3.png";
-import product3 from "../assets/images/shampoo1.png";
+import content1 from "../assets/images/Catelog1.png";
+import content2 from "../assets/images/Catelog2.png";
+import content3 from "../assets/images/content4.png";
 
 const productData = [
   {
-    img: product1,
-    title: "Refreshing Face Wash",
+    img: content1,
+    title: "Herbal Face Wash",
     description:
-      "Gently cleanses your skin while maintaining its natural moisture. Ideal for everyday use and suitable for all skin types.",
+      "Gently cleanses the skin, removes impurities and controls excess oil while maintaining your skin's natural glow.",
     points: [
-      "Infused with Aloe Vera",
-      "Paraben-Free Formula",
-      "Dermatologically Tested"
+      "Enriched with Neem & Aloe Vera",
+      "Prevents pimples and acne",
+      "Suitable for all skin types"
     ]
   },
   {
-    img: product2,
-    title: "Hydrating Gel",
+    img: content2,
+    title: "Ayurvedic Shampoo",
     description:
-      "Lightweight and deeply hydrating gel that gives your skin a dewy glow without any stickiness.",
+      "Strengthens hair from the roots, reduces hair fall and adds a healthy shine with natural herbs.",
     points: [
-      "Non-comedogenic",
-      "Quick Absorption",
-      "Perfect for humid weather"
+      "No Sulphates or Parabens",
+      "Boosts hair growth",
+      "Infused with Shikakai & Amla"
     ]
   },
   {
-    img: product3,
-    title: "Herbal Shampoo",
+    img: content3,
+    title: "Moisturizing Lotion",
     description:
-      "A perfect blend of herbs that strengthens your hair from the roots and adds natural shine.",
-    points: ["No Sulphates", "Prevents Hair Fall", "Enriched with Neem & Amla"]
+      "Lightweight lotion that hydrates your skin deeply, leaving it soft and nourished all day long.",
+    points: [
+      "Non-greasy formula",
+      "Absorbs quickly",
+      "Ideal for dry to normal skin"
+    ]
   }
 ];
 
+
 const Galery = () => {
   return (
-    <section className="w-full px-6 py-20 bg-[#f7f5f2] space-y-24 md:px-20 xl:px-40">
+    <section className="w-full px-6 space-y-24 md:px-20 xl:px-40">
       <div className="text-center mb-10">
         <motion.h2
           initial={{ opacity: 0, y: -20 }}
@@ -61,7 +66,7 @@ const Galery = () => {
       {productData.map((item, index) => (
         <div
           key={index}
-          className={`flex flex-col-reverse md:flex-row items-center md:items-start gap-8 md:gap-20 ${
+          className={`flex flex-col-reverse md:flex-row items-center md:items-center gap-8 md:gap-20 ${
             index % 2 !== 0 ? "md:flex-row-reverse" : ""
           }`}
         >
@@ -72,8 +77,8 @@ const Galery = () => {
               transition={{ duration: 0.5 }}             
               className="flex-1 relative flex items-center justify-center"
             >
-              <div className="absolute w-64 h-64 md:w-80 md:h-80 bg-[#fff6ec] rounded-full -z-10"></div>
-              <div className="bg-[#fefefe] p-6 rounded-2xl shadow-lg w-64 md:w-80">
+              <div className="absolute w-64 h-64 md:w-80 md:h-80 xl:h-80 bg-[#fff6ec] rounded-full -z-10"></div>
+              <div className=" p-6 rounded-2xl w-64 md:w-80">
                 <img
                   src={item.img}
                   alt={item.title}

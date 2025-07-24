@@ -20,6 +20,7 @@ const FilterSidebar = ({
   const handleCheckboxChange = (category) => {
     setSelectedCategories([category]); // single select
     setSearchText(category); // update search input
+    setShowFilter(false);
   };
 
   return (

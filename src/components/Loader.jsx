@@ -12,17 +12,19 @@ const Loader = () => {
       <div className="relative flex items-center justify-center">
         {/* Spinning Circle */}
         <motion.div
-          className="w-55 h-50 border-4 border-[#d7c0b1] border-t-[#7e6659] rounded-full absolute animate-spin"
+          className="w-50 h-55 border-4 border-[#d7c0b1] border-t-[#7e6659] rounded-full absolute animate-spin"
         ></motion.div>
 
         {/* Center Text */}
         <motion.div
-          className="text-[#7e6659] text-xl font-semibold"
+          className="text-[#7e6659] text-xl font-semibold text-center"
           initial={{ scale: 0 }}
           animate={{ scale: 1.2 }}
           transition={{ duration: 0.5 }}
         >
-          🌿 Beauty Care
+          🌿PH Beauty
+          <br/>
+           Care
         </motion.div>
       </div>
     </motion.div>

@@ -61,7 +61,7 @@ const Hero = () => {
           <motion.img
             src={hero}
             alt="Beauty Product"
-            className="w-64 h-auto md:w-80 object-contain drop-shadow-xl"
+            className="w-64 h-auto md:w-full object-contain drop-shadow-xl"
             initial={{ scale: 0.8 }}
             animate={{ scale: 1 }}
             transition={{ duration: 0.6, delay: 0.3 }}

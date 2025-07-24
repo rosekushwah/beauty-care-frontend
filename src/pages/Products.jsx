@@ -16,11 +16,11 @@ const Products = () => {
   // Search logic
   const searchedProducts = searchText.trim()
     ? products.filter((p) =>
-        p.name.toLowerCase().includes(searchText.toLowerCase())
-      )
+      p.name.toLowerCase().includes(searchText.toLowerCase())
+    )
     : products;
 
-  // Optional: category filter (currently not used)
+
   const filteredProducts = searchedProducts;
 
   return (
@@ -50,11 +50,11 @@ const Products = () => {
                 key={product.id}
                 className="border rounded p-4 shadow hover:shadow-lg transition hover:scale-105"
               >
-                <img src={product.image} alt="product img" className="bg-gray-100" />
+                <img src={product.variants[0].image} alt="product img" className="bg-gray-100" />
                 <p className="text-sm font-medium text-center text-gray-600">
                   {product.name}
                 </p>
-                <p className="text-gray-600 text-sm">₹ {product.price}</p>
+                <p className="text-gray-600 text-sm">₹ {product.variants[0].price}</p>
               </Link>
             ))}
           </div>
