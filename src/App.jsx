@@ -2,7 +2,7 @@ import { useState, useEffect } from 'react';
 import AllRoutes from './routes/AllRoutes';
 import Navbar from './components/Navbar';
 import { ProductProvider } from './ContextData/ProductContext';
-import Loader from './components/Loader'; // 👈 make sure path is correct
+import Loader from './components/Loader';
 import BackToTop from './components/BackToTop';
 
 function App() {
@@ -11,8 +11,8 @@ function App() {
   useEffect(() => {
     const timer = setTimeout(() => {
       setLoading(false);
-    }, 2000); // loader visible for 2 seconds
-
+    }, 2000); 
+    
     return () => clearTimeout(timer);
   }, []);
 
